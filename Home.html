@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 with Hanbit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 초기화 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {text-decoration: none;}
+        img {border: 0;}
+        li {list-style: none;}
+    </style>
+
+    <!-- 공통 -->
+    <style>
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+
+    <!-- 헤더 -->
+    <style>
+        #main-header{
+            padding: 10px 5px;
+        }
+        #main-header h1{
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #main-header li{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        #main-header li a{
+            color: #837da0;
+        }
+
+        #main-header li.active a{
+            color: black;
+            font-weight: 500;
+        }
+
+        #main-header label {
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+        #checkbox {
+            display: none;
+        }
+        #checkbox + nav {
+            display: block;
+        }
+        #checkbox:checked + nav {
+            display: none;
+        }
+    </style>
+
+    <!-- 본문과 푸터 -->
+    <style>
+        #main-content {
+            background: #00afa0;
+            padding: 40px 15px 30px;
+        }
+
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500px;
+            text-shadow: 3px 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        #main-content p{
+            text-align: center;
+            color: white;
+            text-shadow: 3px 4px 30px rgba(0, 0, 0, 1);
+        }
+        #sub-content {
+            padding-top: 30px;
+        }
+        #sub-content.sub1{
+            text-align: center;
+        }
+        #sub-content img{
+            width: 70%;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        
+        #main-footer{
+            padding-top: 40px;
+        }
+        footer {
+            background: #323232;
+            color: white;
+            font-size: 12px;
+            text-align: center; 
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <hr>
+                    <li><a href="Book.html">Book</a></li>
+                    <hr>
+                    <li><a href="Music.html">Music</a></li>
+                    <hr>
+                    <li><a href="Habit.html">Habit</a></li>
+                    <hr>
+                    <li><a href="Art.html">Art</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>장성원 웹프로그래밍</h1>
+            <p>AI·SW 24학번</p>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+            <div class="sub1">
+                <div>
+                    <h1>AI·SW 대학</h1>
+                    <h3>Computing and Artificial Intelligence</h3>
+                    <img src="img/Home_img1.jpg" alt="한신대학교 ASIW 학부">
+                    <p>AI-SW학 전공은 첨단 정보기술사회에 요구되는 컴퓨팅 사고와 SW융합 문제해결 역량을 갖춘 전문 인재를 양성하는 것을 목표로 합니다. 이를 위해, 컴퓨팅에 대한 기초 이론에서부터 인공지능, 데이터사이언스, 지능형 IoT, XR콘텐츠, 디지털라이프케어 등의 첨단 컴퓨팅 분야에 대한 전공 지식을 함양하고 실용적 문제해결 역량을 키우기 위한 체계적인 교육과정을 운영합니다.</p>
+                </div>
+            </div>
+
+            <div class="sub2">
+                <img src="" alt="">
+                <div>
+                    <h1>장성원</h1>
+                    <h3>한신대학교 AI·SW 계열 1학년 재학중</h3>
+                    <p>LAB실: (없음)</p>
+                    <p>동아리: (없음)</p>
+                    <p>애인: (없음)</p>
+                    <p>특이사항: 하나의 내용에 대해서 잘 파지만 옆에 지지대가 없음.</p>
+                </div>
+            </div> 
+        </article>
+    </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©1991-2023 Example. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
